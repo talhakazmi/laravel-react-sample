@@ -13,13 +13,9 @@ Follow the steps below to set up and run the project.
 ---
 
 ## 🚀 Getting Started
-
-### 1. Unzip the Project
-Extract the project folder into your desired location.
-
 ---
 
-### 2. Configure Environment Files
+### 1. Configure Environment Files
 
 #### Laravel (`.env`)
 In the project root, create a `.env` file for Laravel (or copy from `.env.example`):
@@ -54,7 +50,7 @@ Inside your React app directory (e.g., resources/js or frontend), create a .env 
 
 ```VITE_API_URL=http://localhost:8000/api```
 
-### 3. Start Docker Containers
+### 2. Start Docker Containers
 From the project root, run:
 
 ```docker-compose up -d --build```
@@ -65,7 +61,7 @@ This will start the following containers:
 - mysql → Database
 - node → Node.js for frontend
 
-### 4. Setup Frontend (React)
+### 3. Setup Frontend (React)
 
 1. Enter the Node container:
     ```docker exec -it node bash```
@@ -78,7 +74,7 @@ This will start the following containers:
 The React app will run on:
     ```http://localhost:5173/```
 
-### 5. Setup Backend (Laravel)
+### 4. Setup Backend (Laravel)
 
 1. Enter the Laravel container:
     ```docker exec -it laravel bash```
@@ -89,6 +85,6 @@ The React app will run on:
 4. Run database migrations:
     ```php artisan migrate```
 
-### 6. Access the Application
+### 5. Access the Application
 
 Laravel API: http://localhost:8000
